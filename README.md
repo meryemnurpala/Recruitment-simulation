@@ -1,21 +1,18 @@
 # İşe Alım Simülasyonu
 
-Bu proje, işe alım süreçlerini simüle eden bir web uygulamasıdır.
+Bu proje, iş başvurularını değerlendirmek için makine öğrenmesi kullanan bir simülasyon uygulamasıdır.
 
 ## Özellikler
 
-- İş ilanı oluşturma ve yönetme
-- Başvuru formu
-- Başvuruları değerlendirme
-- Aday takibi
-- Mülakat süreci yönetimi
+- Başvuran kişilerin bilgilerini değerlendirme
+- Makine öğrenmesi modeli ile uygunluk analizi
+- Başvuru sonuçlarını tahmin etme
 
 ## Teknolojiler
 
-- Frontend: React.js
-- Backend: Node.js
-- Veritabanı: MongoDB
-- Stil: CSS
+- Python
+- Scikit-learn
+- Joblib (model kaydetme ve yükleme)
 
 ## Kurulum
 
@@ -29,15 +26,19 @@ git clone https://github.com/meryemnurpala/Recruitment-simulation.git
 cd Recruitment-simulation
 ```
 
-3. Gerekli paketleri yükleyin:
+3. Gerekli Python paketlerini yükleyin:
 ```bash
-npm install
+pip install scikit-learn joblib
 ```
 
-4. Uygulamayı başlatın:
+4. Uygulamayı çalıştırın:
 ```bash
-npm start
+python main.py
 ```
+
+## Proje Hakkında
+
+Bu proje, iş başvurularını değerlendirmek için makine öğrenmesi kullanır. Başvuran kişinin bilgilerini analiz ederek, pozisyon için uygunluk durumunu tahmin eder.
 
 ## Katkıda Bulunma
 
@@ -46,7 +47,6 @@ npm start
 3. Değişikliklerinizi commit edin (`git commit -am 'Yeni özellik: Açıklama'`)
 4. Branch'inizi push edin (`git push origin feature/yeniOzellik`)
 5. Pull Request oluşturun
-
 
 ## İletişim
 
